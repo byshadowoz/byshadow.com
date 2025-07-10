@@ -1,8 +1,12 @@
 [build]
-  command = "git submodule update --init --recursive && hugo --gc --minify"
+  command = "npm run build"
   publish = "public"
 
 [build.environment]
   HUGO_VERSION = "0.92.2_extended"
-  PYTHON_VERSION = "3.10"  
+  NODE_VERSION = "20"
+  PHP_VERSION = ""
   MISE_ENABLED = "false"
+  
+[build.image]
+  name = "focal"
