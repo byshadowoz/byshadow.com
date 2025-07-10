@@ -4,3 +4,5 @@
 
 [build.environment]
   HUGO_VERSION = "0.92.2_extended"
+  PYTHON_VERSION = "3.10"  
+  MISE_ENABLED = "false"
