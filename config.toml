@@ -1,11 +1,4 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-
-[build]
-  command = "hugo --gc --minify"
-  publish = "public"
-
-[context.production.environment]
-  HUGO_VERSION = "0.92.2_extended"
-  HUGO_ENV = "production"
+=
