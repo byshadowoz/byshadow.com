@@ -3,26 +3,26 @@
     "version": "1.0.0",
     "description": "ByshadowOz portfolio Web",
     "scripts": {
-      "prebuild": "git submodule update --init --recursive",
-      "build": "hugo --gc --minify --verbose",
-      "postinstall": "node scripts/hugo-install.js"
-    },
+    "prebuild": "git submodule update --init --recursive",
+    "build": "./hugo --gc --minify --verbose",
+    "install:hugo": "node scripts/install-hugo.js"
+  },
     "dependencies": {
-      "hugo-bin": "^0.92.0",
-      "hugo-bin-extended": "^0.92.0"
-    },
+      "axios": "^1.7.2",
+      "tar": "^6.2.1"
+  },
     "engines": {
-      "node": ">=18.0.0"
-    },
+      "node": ">=20.0.0"
+  },
     "repository": {
       "type": "git",
       "url": "https://github.com/byshadowoz/byshadow.com"
-    },
+  },
     "keywords": [
       "hugo",
       "portfolio",
       "data-analysis"
-    ],
-    "author": "Your Name",
-    "license": "MIT"
-  }
+  ],
+    "author": "Cesar D. Leones",
+    "license": "None"
+}
